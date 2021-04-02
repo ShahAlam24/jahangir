@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* =====================================================
+    Common css end
+  ======================================================*/
+
+
+/* =====================================================
+     Menu css start
+  ======================================================*/
+.navbar {
+	box-shadow:2px 2px 2px #3292a6;
+	background-color:#fff;
+    z-index: 999;
+    padding: 10px 0;
+}
+.navbar-brand{
+    color: #2d053c !important;
+}
+.nav-link {
+    color: #252525  !important;
+    text-transform: uppercase !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    transition: all linear .3s !important;
+    padding-left: 30px !important;
+
+}
+
+.nav-link:hover {
+    color: #e1366f !important;
+}
+
+/* =====================================================
+    Slider css start
+  ======================================================*/
+.slider-items {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 500px;
+}
+
+.nxt_arr {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background: #ea305b;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all linear .3s;
+
+}
+
+.prv_arr {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	background: #ea305b;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 10;
+	transition: all linear .2s;
+}
+
+.nxt_arr:hover,
+.prv_arr:hover {
+    background: #6d3f3f;
+}
+
+.slider .slick-dots li button {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ea305b;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: transparent;
+    margin: 0 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    cursor: pointer;
+}
+
+.slider .slick-dots li.slick-active button::after {
+    position: absolute;
+    content: '';
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    background: #ea305b;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* ============================================
+        slider css end  
+==============================================*/
+
+
+/* =====================================================
+    Our service css start
+  ======================================================*/
+#our-service {
+    background: #f6f6f6 !important;
+}
+
+.section-head-title {
+    font-size: 45px !important;
+    font-weight: 600 !important;
+    color: #424141 !important;
+    padding-top: 20px !important;
+    text-transform: uppercase !important;
+}
+
+.single-service {
+    position: relative;
+    height: 200px;
+    margin-bottom: 5px !important;
+    background: #1e1e1e;
+    box-sizing: borer-box;
+    padding: 0 15px;
+    transition: .5s;
+    overflow: hidden;
+    float: left;
+    margin: 0 20px;
+    text-align: center;
+
+}
+.single-service:hover h3{
+    color: #ea305b;
+}
+.single-service p {
+    color: #fff;
+    font-size: 13px;
+
+}
+
+.single-service h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    transition: all linear .4s;
+}
+.single-service:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    border-top: 5px solid #71c2e1;
+    border-left: 5px solid #71c2e1;
+    opacity: 0;
+    transition: .5s;
+    box-sizing: borer-box;
+}
+
+.single-service:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    border-bottom: 5px solid #71c2e1;
+    border-right: 5px solid #71c2e1;
+    opacity: 0;
+    transition: .5s;
+    box-sizing: borer-box;
+}
+
+.single-service:hover:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-delay: .3s;
+}
+
+.single-service:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-delay: .3s;
+}
+
+.single-service:hover {
+    box-shadow: 0 30px 35px rgba(0, 0, 0, .7);
+
+}
+
+.single-service span {
+    position: absolute;
+    top: 0;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .3);
+    transition: .5s;
+    transform: skewX(10deg);
+
+}
+
+.single-service:hover span {
+    left: 110%;
+}
+  /* =====================================================
+    Our service css end
+  ======================================================*/
+
+  /* =====================================================
+   Team css start
+  ======================================================*/
+#team-section {
+    background: #f6f6f6;
+}
+
+.single-team {
+    position: relative;
+    height: 300px;
+    background: transparent;
+}
+
+.single-team h3 {
+    color: red;
+}
+.img-area {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    z-index: 2;
+    transform-origin: left;
+    transition: 1s;
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.img-area img {
+    width: 100%;
+    height: 100%;
+}
+.img-text {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background: #ddd;
+    transform-origin: left;
+    transform: perspective(1000px) rotateY(90deg);
+    box-sizing: border-box;
+    text-align: center;
+    transition: 1s;
+}
+
+.single-team:hover .img-area {
+    transform: perspective(1000px) rotateY(-90deg);
+}
+
+.single-team:hover .img-text {
+    transform: perspective(1000px) rotateY(0deg);
+}
+  /* =====================================================
+   Team css end
+  ======================================================*/
+
+  /* =====================================================
+   Contact css start
+  ======================================================*/
+#contact{
+    padding: 30px 0 !important;
+}
+
+
+  /* =====================================================
+   Contact css end
+  ======================================================*/
+
+
+    /* =====================================================
+   Footer css start
+  ======================================================*/
+  footer{
+	background-color:#000;
+	padding-bottom:5px;
+	
+}
+.three_col{
+	color:#fff;
+	padding:10px;
+	margin-top:20px;
+	
+}
+.three_col h4{
+	letter-spacing:5px;
+	color:#ff4181;
+	text-align:center;
+}
+.three_col p{
+	text-align:left;
+}
+.three_col input[type="email"]{
+	width:84%;
+	display:inline-block;
+	background-color:#fff;
+	border:1px solid #ff4181;
+	outline:none;
+	padding:0.5em;
+	font-size:18px;
+	color:#999999;
+	line-height:0.5em;
+}
+.btn1{
+	color:#dec6be;
+	font-size:18px;
+	border:1px solid #ff4181;
+	width:14%;
+	height:38px;
+	text-decoration:none;
+	background-color:#ff4181;
+	
+}
+.mid-row{
+	border:4px solid #ff4181;
+	color:#000;
+	padding:8px;
+	margin-top:5px;
+	text-align:center;
+	background:#fff;
+}
+.mid-row a {
+	font-size:30px;
+	color:#ff4181;
+	letter-spacing:2px;
+}
+.social-icon a {
+    width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	border:1px solid #ff4181;
+	font-size:20px;
+	color:#ff4181;
+	cursor:pointer;
+    transition: all linear .3s;
+	
+}
+
+.social-icon a:hover{
+	color:#fff;
+	background-color:#ff4181;
+	
+}
+.myprofile{
+		padding-top:25px;
+}
+.myprofile p{
+		line-height:3px;
+		letter-spacing: 2px;
+		
+
+
+}
+.myprofile p a{
+	font-size:16px;
+
+
+	
+}
+.contact{
+	color:#fff;
+	padding:10px;
+	margin-top:20px;
+	
+}
+.contact h4{
+	letter-spacing:5px;
+	color:#ff4181;
+	padding-bottom:5px;
+}
+.contact p{
+	text-align:left;
+	
+}
+.contact i{
+	
+	padding-right:20px;
+	
+}
+.number{
+	color:#ff4181;
+	
+}
+.number a{
+	color:#ff4181;
+}
+.address{
+	color:#ff4181;
+	text-decoration:none;
+}
+
+
+.copyright-section{
+	background-color:#e1366f;
+	height:35px;
+	
+	
+	
+}
+.copyright{
+	color:black;
+	padding-top:2px;
+
+}
+  /* =====================================================
+   Footer css end
+  ======================================================*/
+
+
+
+
+
+
+    /* =====================================================
+   Bolog page css start
+  ======================================================*/
+
+.post-section{
+		background:#f6f6f6;
+        margin-bottom: 30px;
+}
+.post-image{
+	height:150px;
+	width:150px;
+	float:left;
+	margin:10px 10px 2px 5px;
+	
+}
+.post{
+	display:block !important;
+	height:auto;
+	padding:10px;
+}
+
+.post-title{
+	padding-left:5%;
+}
+.blog-post{
+	font-size:16px;
+}
+
+.post-date{
+	font-size:13px;
+	color:#cbc2c2;
+	font-style:italic;
+}
+
+
+
+    /* =====================================================
+   Blog page css end
+  ======================================================*/
+
